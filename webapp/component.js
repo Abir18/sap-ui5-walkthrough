@@ -9,7 +9,8 @@ sap.ui.define(
                 manifest: "json"
             },
             init: function () {
-                UIComponent.prototype.init.apply(this, arguments);
+                UIComponent.prototype.init.apply(this);
+                console.log(arguments, "arg");
 
                 // set data model
                 const oData = {
